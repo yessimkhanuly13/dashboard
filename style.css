@@ -3,11 +3,10 @@
     margin: 0;
 }
 
-div{
-    border:1px solid;
-}
 
 .container{
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
@@ -15,9 +14,31 @@ div{
 
 .sidebar{
     grid-row: 1/ 3;
-    display:grid;
-    grid-template-rows: 1fr 5fr;
-    grid-gap:2px;
+    display:flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: #38bdf8;
+    color:white;
+    font-weight: bold;
+}
+
+.header{
+    font-size: 4vh;
+    margin: 0;
+}
+
+.dashimg{
+    height: 2vw;
+    padding-top: 3vh;
+    padding-right: 1vw;
+}
+
+.top{
+    font-size: 3vh;
+}
+
+.bot{
+    font-size: 3vh;
 }
 
 .projects{
@@ -31,17 +52,9 @@ div{
 .main{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    background-color: gainsboro;
 }
 
-
-.top{
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-}
-.bot{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-}
 
 .head{
     grid-column: 1/3;
@@ -62,7 +75,10 @@ div{
 
 .items1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 3vh;
+    font-size: 2vh;
+    font-weight: bold;
 }
 
 .button{
@@ -79,4 +95,55 @@ div{
 .parag{
     display: flex;
     justify-self: flex-start;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+    color:white;    
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.iconsimg{
+    height: 3vh;
+    width: 1.5vw;
+    padding-right: 1vw;
+}
+
+.magnify{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.iconsimg1{
+    height: 2.2vh;
+    width: 1.5vw;
+}
+
+.input{
+    border-radius: 2vw;
+    border:none;
+    background-color: gainsboro;
+    width: 15vw;
+    height: 2.5vh;
+}
+
+.avatar{
+    width: 2vw;
+    height: 3vh;
+    border-radius: 3vw;
+    margin-right: 1vw;
+}
+.name{
+    display: flex;
+    text-align: center;
+    font-size: 2.5vh;
 }
